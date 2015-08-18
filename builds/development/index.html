@@ -1,13 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
   <title>day #</title>
+<!--
   <link rel="stylesheet" href="css/myStyle.css">
   <link rel="stylesheet" href="css/anotherstyle.css">
+-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
 </head>
 <body>
+  <p>Enter the information to the following inputs to see different kinds of progresss effects.</p>
 
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+  <p>Blue progress: "progress progress-success"</p>
+  <section>
+    &lt;div class="
+    <input type="text" ng-model="blueparentClass">
+    "&gt;<br>
+    &lt;div class="<input type="text" ng-model="blueprogressClass">" role="<input type="text" ng-model="blueroleValue">" aria-valuenow="<input type="text" ng-model="bluecurrentValue">" aria-valuemin="<input type="text" ng-model="blueminValue">" aria-valuemax="<input type="text" ng-model="bluemaxValue">" style="<input type="text" ng-model="bluestyleValue">"&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;
+    <br>
+    <div blue-progress-directive blueparent-class="{{blueparentClass}}" blueprogress-class="{{blueprogressClass}}" bluerole-value="{{blueroleValue}}" bluecurrent-value="{{bluecurrentValue}}" bluemin-value="{{blueminValue}}" bluemax-value="{{bluemaxValue}}" bluestyle-value="{{bluestyleValue}}"></div>
+
+  </section>
+
+  <p>Green progress: "progress progress-success"</p>
+  <section>
+    &lt;div class="
+    <input type="text" ng-model="greenparentClass">
+    "&gt;<br>
+    &lt;div class="<input type="text" ng-model="greenprogressClass">" role="<input type="text" ng-model="greenroleValue">" aria-valuenow="<input type="text" ng-model="greencurrentValue">" aria-valuemin="<input type="text" ng-model="greenminValue">" aria-valuemax="<input type="text" ng-model="greenmaxValue">" style="<input type="text" ng-model="greenstyleValue">"&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;
+    <br>
+    <div green-progress-directive greenparent-class="{{greenparentClass}}" greenprogress-class="{{greenprogressClass}}" greenrole-value="{{greenroleValue}}" greencurrent-value="{{greencurrentValue}}" greenmin-value="{{greenminValue}}" greenmax-value="{{greenmaxValue}}" greenstyle-value="{{greenstyleValue}}"></div>
+
+  </section>
+<!--  -->
+  <p>Light progress button: "progress progress-info"</p>
+  <section>
+    &lt;div class="
+    <input type="text" ng-model="lightblueparentClass">
+    "&gt;<br>
+    &lt;div class="<input type="text" ng-model="lightblueprogressClass">" role="<input type="text" ng-model="lightblueroleValue">" aria-valuenow="<input type="text" ng-model="lightbluecurrentValue">" aria-valuemin="<input type="text" ng-model="lightblueminValue">" aria-valuemax="<input type="text" ng-model="lightbluemaxValue">" style="<input type="text" ng-model="lightbluestyleValue">"&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;
+    <br>
+    <div lightblue-progress-directive lightblueparent-class="{{lightblueparentClass}}" lightblueprogress-class="{{lightblueprogressClass}}" lightbluerole-value="{{lightblueroleValue}}" lightbluecurrent-value="{{lightbluecurrentValue}}" lightbluemin-value="{{lightblueminValue}}" lightbluemax-value="{{lightbluemaxValue}}" lightbluestyle-value="{{lightbluestyleValue}}"></div>
+
+  </section>
+  <!--  -->
+  <p>Orange progress: "progress progress-warning"</p>
+  <section>
+    &lt;div class="
+    <input type="text" ng-model="orangeparentClass">
+    "&gt;<br>
+    &lt;div class="<input type="text" ng-model="orangeprogressClass">" role="<input type="text" ng-model="orangeroleValue">" aria-valuenow="<input type="text" ng-model="orangecurrentValue">" aria-valuemin="<input type="text" ng-model="orangeminValue">" aria-valuemax="<input type="text" ng-model="orangemaxValue">" style="<input type="text" ng-model="orangestyleValue">"&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;
+    <br>
+    <div orange-progress-directive orangeparent-class="{{orangeparentClass}}" orangeprogress-class="{{orangeprogressClass}}" orangerole-value="{{orangeroleValue}}" orangecurrent-value="{{orangecurrentValue}}" orangemin-value="{{orangeminValue}}" orangemax-value="{{orangemaxValue}}" orangestyle-value="{{orangestyleValue}}"></div>
+
+  </section>
+  <!--  -->
+  <p>Red progress: "progress progress-danger"</p>
+  <section>
+    &lt;div class="
+    <input type="text" ng-model="redparentClass">
+    "&gt;<br>
+    &lt;div class="<input type="text" ng-model="redprogressClass">" role="<input type="text" ng-model="redroleValue">" aria-valuenow="<input type="text" ng-model="redcurrentValue">" aria-valuemin="<input type="text" ng-model="redminValue">" aria-valuemax="<input type="text" ng-model="redmaxValue">" style="<input type="text" ng-model="redstyleValue">"&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;
+    <br>
+    <div red-progress-directive redparent-class="{{redparentClass}}" redprogress-class="{{redprogressClass}}" redrole-value="{{redroleValue}}" redcurrent-value="{{redcurrentValue}}" redmin-value="{{redminValue}}" redmax-value="{{redmaxValue}}" redstyle-value="{{redstyleValue}}"></div>
+
+  </section>
+
+
+
+
+
+
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/directives/progress-directive.js"></script>
 </body>
 </html>
